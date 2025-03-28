@@ -1,0 +1,168 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: flex-start;
+  flex: 1;
+  margin-right: 20px;
+}
+
+.breadcrumb-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.breadcrumb-path {
+  font-size: 14px;
+  color: #7e8299;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.home-icon {
+  font-size: 16px;
+}
+
+.active-page {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.breadcrumb-right {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #7e8299;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-button:hover {
+  color: #000000;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  position: relative;
+  margin-right: 15px;
+}
+
+.search-bar input {
+  padding: 8px 35px 8px 15px;
+  border: 2px solid #e4e6ef;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 200px;
+  background: none;
+}
+
+.search-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.action-buttons {
+  display: flex;
+}
+
+.action-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.action-button:hover {
+  background-color: #f3f6f9;
+}
+
+.profile-button {
+  color: #7e8299;
+  font-size: 16px;
+}
+
+.profile-button:hover {
+  color: #000000;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-only {
+    display: block;
+  }
+
+  .header {
+    padding: 10px 15px;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .header-actions {
+    display: flex;
+    gap: 10px;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .action-buttons {
+    gap: 5px;
+  }
+
+  .action-button {
+    padding: 3px;
+    font-size: 16px;
+  }
+
+  .breadcrumb {
+    margin-right: 10px;
+  }
+
+  .breadcrumb-path {
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+  }
+
+  .active-page {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+} 

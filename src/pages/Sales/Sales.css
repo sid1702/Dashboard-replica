@@ -1,0 +1,24 @@
+.sales-page {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.content-wrapper {
+  padding: 20px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .content-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .content-wrapper {
+    padding: 10px;
+    grid-gap: 15px;
+  }
+} 
